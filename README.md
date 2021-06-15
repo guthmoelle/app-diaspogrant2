@@ -10,13 +10,19 @@
 2/ Install wampserver
 
 3/ Download app-diaspogrant in your local machine
+
 	- Open commande line
+	
 	- Create Folder in repository
+	
 	- Enter in this Folder
+	
 	- Enter commande : git init
+	
 	- Enter commande : git clone https://github.com/guthmoelle/app-diaspogrant.git
 
 4/ Import Database
+
 	- Launch wampserver
 	- Click on icon wampserver, and click on localhost link
 	- Wampserver page open in browser 
