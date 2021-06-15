@@ -24,15 +24,23 @@
 4/ Import Database
 
 	- Launch wampserver
+	
 	- Click on icon wampserver, and click on localhost link
+	
 	- Wampserver page open in browser 
+	
 	- Click on phpmyadmin, and click on "Exécuter" 
+	
 	- Click on "Nouvelle base de données"
+	
 	- Enter this database name "diaspogrant_dev" in textbox "Nom de la base de données"
+	
 	- And click on "Créer"
+	
 	- Click on "Importer"
+	
 	- Parcourir les fichier : click on "Parcourir" and selectione DBB.sql file
-	And click on "Exécuter"
+	  And click on "Exécuter"
 
 5/ Launch project
 
