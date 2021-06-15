@@ -1,0 +1,165 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+
+
+  {% block Navigation %}
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">DIASPO GRANT</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/entreprises" > Liste Entreprises </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/connexion"> Connexion Entreprise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/inscription"> Inscription Entreprise</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+{% endblock %}        
+
+
+{% block Content %}
+
+<div class="container">
+
+
+      <h1 class="mt-4 mb-3">S'inscrire
+      <small>d'une entreprise à la plateforme</small>
+    </h1>
+
+
+    <div class="row">
+      <div class="col-lg-8 mb-4">
+        
+        <form name="sentMessage" id="contactForm" novalidate>
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label> Raison social :</label>
+              <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your Raison social.">
+              <p class="help-block"></p>
+            </div>
+          </div>
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label> Secteur d'activité :</label>
+              <input type="text" class="form-control" id="phone" required data-validation-required-message="Please enter your Secteur d'activité.">
+            </div>
+          </div>
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label> Chiffre d'affaire :</label>
+              <input type="text" class="form-control" id="email" required data-validation-required-message="Please enter your Chiffre d'affaire.">
+            </div>
+          </div>
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label> Nombre d'employes :</label>
+              <input type="text" class="form-control" id="email" required data-validation-required-message="Please enter your Nombre d'employes.">
+            </div>
+          </div>
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label> Description entreprise :</label>
+              <input type="textarea" class="form-control" id="text" >
+            </div>
+          </div>
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label> Numéro de téléphone :</label>
+              <input type="tel" class="form-control" id="email" required data-validation-required-message="Please enter your Chiffre d'affaire.">
+            </div>
+          </div>
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label> Mail :</label>
+              <input type="mail" class="form-control" id="email" required data-validation-required-message="Please enter your Chiffre d'affaire.">
+            </div>
+          </div>
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label> Adresse :</label>
+              <input type="text" class="form-control" id="email" required data-validation-required-message="Please enter your Chiffre d'affaire.">
+            </div>
+          </div>
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label> Ville :</label>
+              <input type="text" class="form-control" id="email" required data-validation-required-message="Please enter your Chiffre d'affaire.">
+            </div>
+          </div>
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label> Département :</label>
+              <input type="text" class="form-control" id="email" required data-validation-required-message="Please enter your Chiffre d'affaire.">
+            </div>
+          </div>
+
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label> Code postal :</label>
+              <input type="text" class="form-control" id="email" required data-validation-required-message="Please enter your Chiffre d'affaire.">
+            </div>
+          </div>
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label> Logo :</label>
+              <input type="file" class="form-control" id="email" required data-validation-required-message="Please enter your Chiffre d'affaire.">
+            </div>
+          </div>
+          
+          <div id="success"></div>
+          <button type="submit" class="btn btn-primary" id="sendMessageButton">Valider</button>
+        </form>
+      </div>
+
+    </div>
+
+
+
+        
+
+    
+
+
+  </div>
+
+{% endblock %}
+
+{% block Footer %}
+<footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; App Diaspogrant 2020</p>
+    </div>
+  </footer>
+{% endblock %}
+
+
+{% endblock %}
+    

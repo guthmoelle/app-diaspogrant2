@@ -1,0 +1,99 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+
+
+  {% block Navigation %}
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">DIASPO GRANT</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/entreprises" > Liste Entreprises </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/connexion"> Connexion Entreprise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/inscription"> Inscription Entreprise</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+{% endblock %}        
+
+
+{% block Content %}
+
+<div class="container">
+
+
+
+    <h1 class="mt-4 mb-3">Liste
+      <small> des entreprises </small>
+    </h1>
+
+    
+
+        
+
+  
+
+        <!-- Page Features-->
+        <div class="row text-center">
+
+            {% for entreprise in entreprises %}
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top img-thumbnail" src="/img/{{ entreprise.imageFilename }}.jpg" alt="500x325" />
+                        <div class="card-body">
+                            <h4 class="card-title"> {{ entreprise.r_social }} </h4>
+                            <p class="card-text"> {{ entreprise.description }} </p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary" href="/entreprise/{{ entreprise.r_social }}">Voir plus !</a></div>
+                    </div>
+                </div> 
+
+            {% endfor %}  
+
+        </div>
+
+        <!-- Pagination-->
+        <ul class="pagination justify-content-center mb-4">
+          <li class="page-item"><a class="page-link" href="#!">← Older</a></li>
+          <li class="page-item disabled"><a class="page-link" href="#!">Newer →</a></li>
+        </ul>
+
+
+
+        
+
+    
+
+
+  </div>
+
+{% endblock %}
+
+{% block Footer %}
+<footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; App Diaspogrant 2020</p>
+    </div>
+  </footer>
+{% endblock %}
+
+
+{% endblock %}
+    

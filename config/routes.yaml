@@ -1,0 +1,24 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+home:
+    path: /
+    controller: App\Controller\HomeController::index
+    #controller: App\Controller\EntrepriseController::index
+
+inscription:
+    path: /inscription
+    controller: App\Controller\HomeController::inscription
+
+connexion:
+    path: /connexion
+    controller: App\Controller\HomeController::connexion
+
+entreprises:
+    path: /entreprises
+    controller: App\Controller\HomeController::entreprises
+
+entreprise:
+    path: /entreprise/{r_social}
+    controller: App\Controller\HomeController::entreprise
